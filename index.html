@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+  </head>
+  <body>
+      <div class = 'container'>
+       <div class="jumbotron text-center">
+           <h1 class="display-3">Crystal Collector</h1>
+           <p class="lead">Choose carefully!</p>
+       </div>
+       <div class = 'row'>
+           <div class = 'col-md-6'>
+               <h3>How to play</h3>
+               <p>You will be given a random number at the start of the game.</p>
+               <p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your score.</p>
+               <p>You win the game by matching the total score to the random number, but if you go over...then you lose!</p>
+               <p>The value of each crystal is hidden from you until you click on the crystal.</p>
+               <p>Each time you play, the crystals will have a new value.</p>
+           </div>
+       </div>
+       <!--GAME NUMBERS-->
+       <div id = 'gameNumbers' class = 'row mt-4'>
+           <div id = 'winLoss' class = 'col-md-4'>
+               <h5>Wins: <span id = 'wins'></span></h5><br>
+               <h5>Loss: <span id = 'loss'></span></h5>
+           </div>
+           <div id = 'numToGuess' class = 'col-md-4'>
+               <h5>Match this number</h5>
+               <h3><span id = 'numToMatch'></span></h3>
+           </div>
+           <div id = 'currentScore' class = 'col-md-4'>
+               <h5>Your current score is:</h5>
+               <h3><span id = 'yourCurrentScore'></span></h3>
+           </div>
+       </div>
+
+       <!--CRYSTAL AREA-->
+       <div id = 'crystalArea'>
+           <img id = 'crystalImage' src="assets/images/diamondImage.jpg" alt="Picture of a diamond" value = '3'>
+       </div>
+      </div> <!--End OF Container-->
+      
+    <!-- Optional JavaScript -->
+     
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
+    <script src = 'assets/javascript/game.js'></script>
+  </body>
+</html>
