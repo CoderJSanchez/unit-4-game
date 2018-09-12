@@ -8,6 +8,8 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
       <div class = 'container'>
@@ -16,13 +18,26 @@
            <p class="lead">Choose carefully!</p>
        </div>
        <div class = 'row'>
-           <div class = 'col-md-6'>
-               <h3>How to play</h3>
-               <p>You will be given a random number at the start of the game.</p>
-               <p>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your score.</p>
-               <p>You win the game by matching the total score to the random number, but if you go over...then you lose!</p>
-               <p>The value of each crystal is hidden from you until you click on the crystal.</p>
-               <p>Each time you play, the crystals will have a new value.</p>
+           <div class = 'col-md-12'>
+               <p>
+                <a class="btn btn-primary btn-lg btn-block" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                  How To Play
+                </a>
+              </p>
+              <div class="collapse" id="collapseExample">
+                <div class="card card-body">
+                    <ol>
+                    <li>You will be given a random number at the start of the game.</li>
+                    <li>There are four crystals below.  By clicking on a crystal you will add a specific amount of points to your score.</li>
+                    <li>You win the game by matching the total score to the random number, but if you go over...then you lose!</li>
+                    <li>The value of each crystal is hidden from you until you click on the crystal.</li>
+                    <li>Each time you play, the crystals will have a new value.</li>
+
+                    </ol>
+                    
+                </div>
+              </div>
+               
            </div>
        </div>
        <!--GAME NUMBERS-->
@@ -31,23 +46,23 @@
                <h5>Wins: <span id = 'wins'></span></h5><br>
                <h5>Loss: <span id = 'loss'></span></h5>
            </div>
-           <div id = 'numToGuess' class = 'col-md-4'>
+           <div id = 'numToGuess' class = 'col-md-4 text-center'>
                <h5>Match this number</h5>
-               <h3><span id = 'numToMatch'></span></h3>
+               <h3 class = 'text-center'><span id = 'numToMatch'></span></h3>
            </div>
-           <div id = 'currentScore' class = 'col-md-4'>
+           <div id = 'currentScore' class = 'col-md-4 text-center'>
                <h5>Your current score is:</h5>
-               <h3><span id = 'yourCurrentScore'></span></h3>
+               <h3 class = 'text-center'><span id = 'yourCurrentScore'></span></h3>
            </div>
        </div>
 
        <!--CRYSTAL AREA-->
        <div id = 'crystalArea' class = 'mt-4'>
            <div class = 'row'>
-                <div class = 'col-md-3'><img id = 'crystalOne' class = 'img-fluid' src="assets/images/diamondImage.jpg" alt=""></div>
-                <div class = 'col-md-3'><img id = 'crystalTwo' class = 'img-fluid' src="assets/images/diamondImage.jpg" alt=""></div>
-                <div class = 'col-md-3'><img id = 'crystalThree' class = 'img-fluid' src="assets/images/diamondImage.jpg" alt=""></div>
-                <div class = 'col-md-3'><img id = 'crystalFour' class = 'img-fluid' src="assets/images/diamondImage.jpg" alt=""></div>
+                <div id = 'one' class = 'col-md-3'><img id = 'crystalOne' class = 'img-fluid' src="assets/images/diamondImage.jpg" alt=""></div>
+                <div id = 'two' class = 'col-md-3'><img id = 'crystalTwo' class = 'img-fluid' src="assets/images/diamondImage.jpg" alt=""></div>
+                <div id = 'three' class = 'col-md-3'><img id = 'crystalThree' class = 'img-fluid' src="assets/images/diamondImage.jpg" alt=""></div>
+                <div id = 'four' class = 'col-md-3'><img id = 'crystalFour' class = 'img-fluid' src="assets/images/diamondImage.jpg" alt=""></div>
            </div>
        </div>
       </div> <!--End OF Container-->

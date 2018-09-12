@@ -1,0 +1,29 @@
+body{
+    background-image: url(/Users/juliosanchez/Desktop/smuClassWork/unit-4-game/assets/images/blueBackground.jpg);
+}
+
+#one:hover,
+#two:hover,
+#three:hover,
+#four:hover{
+background-color: blueviolet
+
+}
+
+.container{
+    background-color: white;
+}
+
+h1{
+    font-family: 'Great Vibes', cursive;
+    font-size: 5em;
+    color: purple;
+}
+
+.jumbotron{
+    background-color: #f9b653;
+}
+
+.lead{
+    color: white;
+}

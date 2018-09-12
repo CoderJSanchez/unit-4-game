@@ -44,114 +44,82 @@ function newNumberToGuess(){
     $('#numToMatch').text(guessThisNumber);
 }
 
-
-$('#crystalOne').on('click', function(){
-    playerCounter+= crystalRandomNumber;
-    $('#yourCurrentScore').text(playerCounter);
-    console.log(playerCounter);
-      
-if(guessThisNumber === playerCounter){
-    alert('you win');
-    crystalReset();
-    winCounter++;
-    $('#wins').text(winCounter);
-}else if(playerCounter > guessThisNumber){
-    alert('You lost');
-    crystalReset();
-    lossCounter++;
-    $('#loss').text(lossCounter);
-}else{ 
-    false;
-};
+//This function will reset the counters and make the alerts
+function winLose(){
+    if(guessThisNumber === playerCounter){
+        alert('you win');
+        crystalReset();
+        winCounter++;
+        $('#wins').text(winCounter);
+    }else if(playerCounter > guessThisNumber){
+        alert('You lost');
+        crystalReset();
+        lossCounter++;
+        $('#loss').text(lossCounter);
+    }else{ 
+        false;
+    };
     
-})
+}
 
 
-$('#crystalTwo').on('click', function(){
-    playerCounter+= crystalRandomNumber2;
-    $('#yourCurrentScore').text(playerCounter);
-    console.log(playerCounter);
-      
-if(guessThisNumber === playerCounter){
-    alert('you win');
-    crystalReset();
-    winCounter++;
-    $('#wins').text(winCounter);
-}else if(playerCounter > guessThisNumber){
-    alert('You lost');
-    crystalReset();
-    lossCounter++;
-    $('#loss').text(lossCounter);
-}else{ 
-    false;
-};
-})
+// $('#crystalOne').on('click', function(){
+//     playerCounter+= crystalRandomNumber;
+//     $('#yourCurrentScore').text(playerCounter);
+//     console.log(playerCounter);
+//     winLose();    
+// })
 
 
-$('#crystalThree').on('click', function(){
-    playerCounter+= crystalRandomNumber3;
-    $('#yourCurrentScore').text(playerCounter);
-    console.log(playerCounter);
-      
-if(guessThisNumber === playerCounter){
-    alert('you win');
-    crystalReset();
-    winCounter++;
-    $('#wins').text(winCounter);
-}else if(playerCounter > guessThisNumber){
-    alert('You lost');
-    crystalReset();
-    lossCounter++;
-    $('#loss').text(lossCounter);
-}else{ 
-    false;
-};
-})
+// $('#crystalTwo').on('click', function(){
+//     playerCounter+= crystalRandomNumber2;
+//     $('#yourCurrentScore').text(playerCounter);
+//     console.log(playerCounter);
+//     winLose();
+// })
 
 
-$('#crystalFour').on('click', function(){
-    playerCounter+= crystalRandomNumber4;
-    $('#yourCurrentScore').text(playerCounter);
-    console.log(playerCounter);
-      
-if(guessThisNumber === playerCounter){
-    alert('you win');
-    crystalReset();
-    winCounter++;
-    $('#wins').text(winCounter);
-}else if(playerCounter > guessThisNumber){
-    alert('You lost');
-    crystalReset();
-    lossCounter++;
-    $('#loss').text(lossCounter);
-}else{ 
-    false;
-};
-})
+// $('#crystalThree').on('click', function(){
+//     playerCounter+= crystalRandomNumber3;
+//     $('#yourCurrentScore').text(playerCounter);
+//     console.log(playerCounter);
+//     winLose();
+// })
 
 
-// function crystalCaller(crystalName, crystalNumber){
-//     $(crystalName).on('click', function(){
-//         playerCounter += crystalNumber;
-//         $('#yourCurrentScore').text(playerCounter);
-//         console.log(playerCounter);
+// $('#crystalFour').on('click', function(){
+//     playerCounter+= crystalRandomNumber4;
+//     $('#yourCurrentScore').text(playerCounter);
+//     console.log(playerCounter);
+//     winLose();
+// })
+
+
+
+
+function crystalCaller(crystalName, crystalNumber){
+    $(crystalName).on('click', function(){
+        playerCounter += crystalNumber;
+        $('#yourCurrentScore').text(playerCounter);
+        console.log(playerCounter);
           
-//     if(guessThisNumber === playerCounter){
-//         alert('you win');
-//         crystalReset();
-//         winCounter++;
-//         $('#wins').text(winCounter);
-//     }else if(playerCounter > guessThisNumber){
-//         alert('You lost');
-//         crystalReset();
-//         lossCounter++;
-//         $('#loss').text(lossCounter);
-//     }
+    if(guessThisNumber === playerCounter){
+        alert('you win');
+        crystalReset();
+        winCounter++;
+        $('#wins').text(winCounter);
+    }else if(playerCounter > guessThisNumber){
+        alert('You lost');
+        crystalReset();
+        lossCounter++;
+        $('#loss').text(lossCounter);
+    }
 
-//     })
-// }
+    })
+    console.log(crystalNumber);
+}
 
-// crystalCaller($('#crystalOne', crystalRandomNumber));
-// crystalCaller($('#crystalTwo', crystalRandomNumber2));
-// crystalCaller($('#crystalThree', crystalRandomNumber3));
-// crystalCaller($('#crystalFour', crystalRandomNumber4));
+crystalCaller($('#crystalOne'),crystalRandomNumber);
+crystalCaller($('#crystalTwo'), crystalRandomNumber2);
+crystalCaller($('#crystalThree'), crystalRandomNumber3);
+crystalCaller($('#crystalFour'), crystalRandomNumber4);
