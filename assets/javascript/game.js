@@ -62,41 +62,6 @@ function winLose(){
     
 }
 
-
-// $('#crystalOne').on('click', function(){
-//     playerCounter+= crystalRandomNumber;
-//     $('#yourCurrentScore').text(playerCounter);
-//     console.log(playerCounter);
-//     winLose();    
-// })
-
-
-// $('#crystalTwo').on('click', function(){
-//     playerCounter+= crystalRandomNumber2;
-//     $('#yourCurrentScore').text(playerCounter);
-//     console.log(playerCounter);
-//     winLose();
-// })
-
-
-// $('#crystalThree').on('click', function(){
-//     playerCounter+= crystalRandomNumber3;
-//     $('#yourCurrentScore').text(playerCounter);
-//     console.log(playerCounter);
-//     winLose();
-// })
-
-
-// $('#crystalFour').on('click', function(){
-//     playerCounter+= crystalRandomNumber4;
-//     $('#yourCurrentScore').text(playerCounter);
-//     console.log(playerCounter);
-//     winLose();
-// })
-
-
-
-
 function crystalCaller(crystalName, crystalNumber){
     $(crystalName).on('click', function(){
         playerCounter += crystalNumber;
